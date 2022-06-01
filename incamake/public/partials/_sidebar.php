@@ -1,6 +1,6 @@
 <ul class="sidebar navbar-nav">
     <li class="nav-item ">
-        <a class="nav-link" href="<?php echo URLROOT;?>">
+        <a class="nav-link" href="<?php echo URLROOT;?>/incamake">
         <i class="fas fa-fw fa-home"></i>
         <span>Ahabanza</span>
         </a>
