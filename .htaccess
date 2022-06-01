@@ -1,0 +1,17 @@
+# Turn Rewrite Engine On
+RewriteEngine on
+
+# Rewrite for Admin script
+RewriteRule ^incamake/admin/$ incamake/admin/index.php [NC,L]
+RewriteRule ^incamake/api/upload$ incamake/api/upload.php [NC,L]
+
+# Rewrite for Client script
+RewriteRule ^incamake/home$ incamake/client/index.php [NC,L]
+
+# Rewrite for Public script
+RewriteRule ^incamake/$ incamake/public/index.php [NC,L]
+RewriteRule ^incamake$ incamake/public/index.php [NC,L]
+RewriteRule ^incamake/index$ incamake/public/index.php [NC,L]
+RewriteRule ^incamake/newspapers$ incamake/public/papers.php [NC,L]
+RewriteRule ^incamake/i/(.*)$ incamake/public/details.php?query=$1
+ErrorDocument 404 /incamake/404.html
